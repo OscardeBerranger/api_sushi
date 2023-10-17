@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const port = 3000
-const pizzaRoutes = require('./route/pizza')
+const sushiRoutes = require('./route/sushi')
 const session = require('express-session')
 const mongodbSession = require('connect-mongodb-session')(session)
 const mongoUri = "mongodb://localhost:27017/sessions"
@@ -37,7 +37,7 @@ app.get('/connect', (req, res)=>{
 
 
 app.use(express.json())
-app.use('/api/pizza', pizzaRoutes)
+app.use('/api/sushi', sushiRoutes)
 
 
 app.listen(port, ()=>{

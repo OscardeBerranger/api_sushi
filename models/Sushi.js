@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const PizzaSchema = new mongoose.Schema({
+const SushiSchema = new mongoose.Schema({
 
     name:{
         type: mongoose.SchemaTypes.String
@@ -10,4 +10,5 @@ const PizzaSchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('pizza', PizzaSchema)
+
+module.exports = mongoose.model('sushi', SushiSchema)
